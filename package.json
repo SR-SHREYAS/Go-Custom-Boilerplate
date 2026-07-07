@@ -1,0 +1,35 @@
+{
+  "name": "go-custom-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "format:check": "turbo run format:check",
+    "format:fix": "turbo run format:fix",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
+    "typecheck": "turbo run typecheck",
+    "clean": "turbo run clean && rimraf node_modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SR-SHREYAS/Go-Custom-Boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SR-SHREYAS/Go-Custom-Boilerplate/issues"
+  },
+  "homepage": "https://github.com/SR-SHREYAS/Go-Custom-Boilerplate#readme",
+  "packageManager": "bun@1.3.14",
+  "engines": {
+    "node": ">=24"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "turbo": "^2.10.4",
+    "typescript": "^6.0.3"
+  }
+}
