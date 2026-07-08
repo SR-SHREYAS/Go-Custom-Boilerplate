@@ -1,4 +1,3 @@
-# Taskfile for go-boilerplate , reuse same , applicable for almost all go projects
 version: '3'
 
 vars:
