@@ -6,11 +6,11 @@ import (
 )
 
 type ObservabilityConfig struct {
-	ServiceName string            `koanf:"service_name" validate:"required"`
-	Environment string            `koanf:"environment" validate:"required"`
-	Logging     LoggingConfig     `koanf:"logging" validate:"required"`
-	NewRelic    NewRelicConfig    `koanf:"new_relic" validate:"required"`
-	HealthCheck HealthCheckConfig `koanf:"health_check" validate:"required"`
+	ServiceName  string             `koanf:"service_name" validate:"required"`
+	Environment  string             `koanf:"environment" validate:"required"`
+	Logging      LoggingConfig      `koanf:"logging" validate:"required"`
+	NewRelic     NewRelicConfig     `koanf:"new_relic" validate:"required"`
+	HealthChecks HealthChecksConfig `koanf:"health_check" validate:"required"`
 }
 
 type LoggingConfig struct {
@@ -26,7 +26,7 @@ type NewRelicConfig struct {
 	DebugLogging              bool   `koanf:"debug_logging" validate:"required"`
 }
 
-type HealthCheckConfig struct {
+type HealthChecksConfig struct {
 	Enabled  bool          `koanf:"enabled" `
 	Interval time.Duration `koanf:"interval" validate:"required"`
 	Timeout  time.Duration `koanf:"timeout" validate:"required"`
@@ -48,7 +48,7 @@ func DefaultObservabilityConfig() *ObservabilityConfig {
 			DistributedTracingEnabled: true,
 			DebugLogging:              false,
 		},
-		HealthCheck: HealthCheckConfig{
+		HealthChecks: HealthChecksConfig{
 			Enabled:  true,
 			Interval: 30 * time.Second,
 			Timeout:  5 * time.Second,

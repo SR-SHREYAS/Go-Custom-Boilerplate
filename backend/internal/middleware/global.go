@@ -22,7 +22,7 @@ func NewGlobalMiddleware(s *server.Server) *GlobalMiddleware {
 
 func (global *GlobalMiddleware) CORS() echo.MiddlewareFunc {
 	return middleware.CORSWithConfig(middleware.CORSConfig{
-		AllowOrigins: global.server.Config.Server.CORSAllowOrigin,
+		AllowOrigins: global.server.Config.Server.CORSAllowedOrigins,
 	})
 }
 
