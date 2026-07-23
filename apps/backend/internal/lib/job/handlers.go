@@ -7,8 +7,8 @@ import (
 
 	"github.com/hibiken/asynq"
 	"github.com/rs/zerolog"
-	"github.com/sriniously/go-boilerplate/internal/config"
-	"github.com/sriniously/go-boilerplate/internal/lib/email"
+	"github.com/SR-SHREYAS/Go-Custom-Boilerplate/internal/config"
+	"github.com/SR-SHREYAS/Go-Custom-Boilerplate/internal/lib/email"
 )
 
 var emailClient *email.Client

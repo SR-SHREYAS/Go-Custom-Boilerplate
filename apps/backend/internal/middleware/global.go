@@ -7,9 +7,9 @@ import (
 	"github.com/labstack/echo/v4/middleware"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog"
-	"github.com/sriniously/go-boilerplate/internal/errs"
-	"github.com/sriniously/go-boilerplate/internal/server"
-	"github.com/sriniously/go-boilerplate/internal/sqlerr"
+	"github.com/SR-SHREYAS/Go-Custom-Boilerplate/internal/errs"
+	"github.com/SR-SHREYAS/Go-Custom-Boilerplate/internal/server"
+	"github.com/SR-SHREYAS/Go-Custom-Boilerplate/internal/sqlerr"
 )
 
 type GlobalMiddlewares struct {

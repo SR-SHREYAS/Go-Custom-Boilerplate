@@ -1,4 +1,4 @@
-module github.com/sriniously/go-boilerplate
+module github.com/SR-SHREYAS/Go-Custom-Boilerplate
 
 go 1.24.5
 

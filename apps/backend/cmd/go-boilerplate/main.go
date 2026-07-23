@@ -8,14 +8,14 @@ import (
 	"os/signal"
 	"time"
 
-	"github.com/sriniously/go-boilerplate/internal/config"
-	"github.com/sriniously/go-boilerplate/internal/database"
-	"github.com/sriniously/go-boilerplate/internal/handler"
-	"github.com/sriniously/go-boilerplate/internal/logger"
-	"github.com/sriniously/go-boilerplate/internal/repository"
-	"github.com/sriniously/go-boilerplate/internal/router"
-	"github.com/sriniously/go-boilerplate/internal/server"
-	"github.com/sriniously/go-boilerplate/internal/service"
+	"github.com/SR-SHREYAS/Go-Custom-Boilerplate/internal/config"
+	"github.com/SR-SHREYAS/Go-Custom-Boilerplate/internal/database"
+	"github.com/SR-SHREYAS/Go-Custom-Boilerplate/internal/handler"
+	"github.com/SR-SHREYAS/Go-Custom-Boilerplate/internal/logger"
+	"github.com/SR-SHREYAS/Go-Custom-Boilerplate/internal/repository"
+	"github.com/SR-SHREYAS/Go-Custom-Boilerplate/internal/router"
+	"github.com/SR-SHREYAS/Go-Custom-Boilerplate/internal/server"
+	"github.com/SR-SHREYAS/Go-Custom-Boilerplate/internal/service"
 )
 
 const DefaultContextTimeout = 30
