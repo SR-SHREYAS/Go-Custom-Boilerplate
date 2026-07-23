@@ -230,7 +230,3 @@ Log levels:
 3. Update documentation
 4. Run linters before committing
 5. Keep commits atomic and well-described
-
-## License
-
-See the parent project's LICENSE file.
